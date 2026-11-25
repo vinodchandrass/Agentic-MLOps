@@ -25,3 +25,16 @@ jobs:
           python scripts/reproduce_contrasts.py
           python scripts/ameaf.py
           python scripts/generate_figures.py
+
+      - name: Collect reproducibility outputs
+        run: |
+          mkdir -p generated
+          python reproduce_all.py > generated/register_audit.json
+          python scripts/reproduce_contrasts.py > generated/contrasts.json
+          python scripts/ameaf.py > generated/ameaf_logic.txt
+      - name: Archive reproducibility outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: provisional-reproducibility-outputs
+          path: generated/
+          if-no-files-found: error
