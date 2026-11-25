@@ -11,7 +11,7 @@ Research companion to **Beyond Automation: A Systematic Survey of Adaptive Auton
 - The recovered backlog contains 415 abstracts; a historical audit reports three supplementary abstracts, giving 418/559. Original supplement entries still require authentication.
 
 ## Purpose
-This repository presently publishes **validation code, methodological documentation and aggregate audit results**. Do not infer from its existence that PRISMA is complete or the research has been independently verified. No Web of Science export, copyrighted PDFs, reviewer identities, unpublished manuscript, or confidential extraction data have been uploaded.
+This repository presently publishes **validation code, methodological documentation, provisional research registers and aggregate audit results**. Do not infer from its existence that PRISMA is complete or the research has been independently verified. No raw Web of Science export, copyrighted PDFs, reviewer identities or manuscript have been uploaded. Minimized provisional screening and comparative extraction registers are included.
 
 ## Reproduce validation
 ```bash
@@ -44,3 +44,14 @@ python scripts/statistical_sensitivity.py
 python scripts/check_prisma_flow.py schemas/prisma_flow_template.json
 ```
 The provisional PRISMA template is intentionally rejected because counts are unknown. See `results/` for aggregate audits. Multiple studies may be described in one report; the crosswalk must be verified separately.
+
+## Integrated provisional reproduction
+Run from the repository root with Python 3.12 (standard library only):
+```bash
+python -m unittest discover -s tests -v
+python reproduce_all.py
+python scripts/reproduce_contrasts.py
+python scripts/ameaf.py
+python scripts/generate_figures.py
+```
+The 559-record register, 43-record evidence gate register and 15 contrasts across four candidate studies are provisional. SVG outputs are generated locally in `generated/`. AMEAF tests verify logical behavior, not empirical validity. The complete workflow passed at commit `02f7e686fa64f5ab88f0292be8f391786bcd735b` ([run](https://github.com/vinodchandrass/Agentic-MLOps/actions/runs/45641003104)). Final reviewer authentication, original search provenance, primary-source anchors and final PRISMA remain outstanding. The manuscript is intentionally excluded. MIT applies to original software and associated software documentation only.
