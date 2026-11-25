@@ -1,0 +1,33 @@
+{
+  "source": "AMLOps_559_Single_Adjudication_Backlog.csv",
+  "audit_date": "2026-11-25",
+  "rows": 559,
+  "unique_internal_ids": 559,
+  "exact_ids_1_to_559": true,
+  "malformed_rows": 0,
+  "priority_records": 43,
+  "abstracts_in_this_version": 415,
+  "missing_abstracts_in_this_version": 144,
+  "reviewer_1": {
+    "pending": 43,
+    "blank": 516
+  },
+  "reviewer_2": {
+    "pending": 43,
+    "blank": 516
+  },
+  "adjudication_pending": 559,
+  "documented_paired_votes": 0,
+  "work_routes": {
+    "fulltext_eligibility_and_dual_review": 36,
+    "recover_source_and_screen": 144,
+    "independent_title_abstract_screen": 378,
+    "resolve_conflict": 1
+  },
+  "later_provisional_status": {
+    "undetermined": 557,
+    "provisional_include": 2
+  },
+  "final_prisma_ready": false,
+  "limitations": "Aggregate audit of existing backlog, not original search authentication or proof that historical human assessments did not occur. Three reported abstract supplements are outside this ledger version. No restricted rows or reviewer identities published."
+}
