@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "Please cite this repository at the specific commit used. Scientific review results remain provisional."
+title: "Agentic MLOps: systematic review reproducibility"
+type: software
+authors:
+  - name: "Agentic MLOps research project"
+repository-code: "https://github.com/vinodchandrass/Agentic-MLOps"
