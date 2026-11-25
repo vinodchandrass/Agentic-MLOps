@@ -31,9 +31,13 @@ class PrismaTests(unittest.TestCase):
         d=fixture()
         d["full_text_exclusions_by_reason"]={"synthetic_reason":34}
         self.assertTrue(check(d))
-    def test_study_count_mismatch(self):
+    def test_multiple_studies_per_report_allowed(self):
         d=fixture()
         d["included_studies"]=11
+        self.assertEqual(check(d), [])
+    def test_missing_study_mapping_count(self):
+        d=fixture()
+        d["included_studies"]=0
         self.assertTrue(check(d))
     def test_negative_count(self):
         d=fixture()
