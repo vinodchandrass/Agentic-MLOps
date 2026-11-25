@@ -1,0 +1,12 @@
+column,description,required_for_final
+record_id,Frozen internal record integer ID from 1 to 559,yes
+record_status,RETAINED or DUPLICATE_REMOVED or OTHER_REMOVED with provenance,yes
+reviewer_1_decision,INCLUDE EXCLUDE UNCLEAR or blank pending,yes
+reviewer_2_decision,INCLUDE EXCLUDE UNCLEAR or blank pending,yes
+adjudicated_decision,INCLUDE EXCLUDE or blank pending,yes
+report_id,Source report identifier for report-level eligibility,yes
+study_id,Unique study identifier for final included evidence,yes
+retrieval_status,RETRIEVED NOT_RETRIEVED NOT_SOUGHT or blank pending,yes
+full_text_decision,INCLUDE EXCLUDE or blank pending,yes
+exclusion_reason,Documented reason when full_text_decision is EXCLUDE,yes
+evidence_anchor,Source page section DOI or accession anchor,yes
