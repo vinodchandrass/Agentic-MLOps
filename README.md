@@ -8,17 +8,17 @@ Research companion to **Beyond Automation: A Systematic Survey of Adaptive Auton
 - Four candidate empirical investigations underpin **15 descriptive outcome contrasts**; these are neither 15 independent studies nor a pooled meta-analysis.
 - Final PRISMA identification/screening/eligibility/inclusion counts, full search provenance, independent reviewer adjudication, and source-level methodological assessments **are incomplete**.
 - Two previously provided 559-row Reviewer A and Reviewer B spreadsheets were inspected in the research library: their **Independent decisions** sheets contained blank decision fields. These are screening templates, *not* 559 independent decisions from either reviewer. Separate completed human assessments are reportedly available, but their original vote artifacts remain to be located/authenticated.
-- Historical abstract-availability counts differ (415/144 vs 418/141), pending row-level provenance reconciliation.
+- The recovered backlog contains 415 abstracts; a historical audit reports three supplementary abstracts, giving 418/559. Original supplement entries still require authentication.
 
 ## Purpose
-This repository presently publishes **validation code and methodological documentation only**. Do not infer from its existence that PRISMA is complete or the research has been independently verified. No Web of Science export, copyrighted PDFs, reviewer identities, unpublished manuscript, or confidential extraction data have been uploaded.
+This repository presently publishes **validation code, methodological documentation and aggregate audit results**. Do not infer from its existence that PRISMA is complete or the research has been independently verified. No Web of Science export, copyrighted PDFs, reviewer identities, unpublished manuscript, or confidential extraction data have been uploaded.
 
 ## Reproduce validation
 ```bash
 python -m unittest discover -s tests -v
 python scripts/validate_review.py --ledger path/to/authorized_local_ledger.csv --report validation.json
 ```
-The command verifies schema, row IDs, decision statuses and arithmetic; it **does not fabricate missing votes or transform historical labels into final decisions**. Use `--require-final` to make the check fail unless every row is independently decided and adjudicated.
+The command verifies schema, row IDs, decision statuses and arithmetic; it **does not fabricate missing votes or transform historical labels into final decisions**. Use `--require-final` for structural completeness checks only; it cannot authenticate reviewer decisions.
 
 ## Repository contents
 - `docs/METHODOLOGY.md` — original protocol requirements, screening and appraisal boundaries.
@@ -37,3 +37,10 @@ The command verifies schema, row IDs, decision statuses and arithmetic; it **doe
 5. Review redistribution rights, confidentiality and blinded-review policies before public dataset or manuscript release.
 
 **Citation/DOI:** not assigned. **Research quality target:** aspirational 9.5+/10, not yet achieved.
+
+## Additional checks
+```bash
+python scripts/statistical_sensitivity.py
+python scripts/check_prisma_flow.py schemas/prisma_flow_template.json
+```
+The provisional PRISMA template is intentionally rejected because counts are unknown. See `results/` for aggregate audits. Multiple studies may be described in one report; the crosswalk must be verified separately.
