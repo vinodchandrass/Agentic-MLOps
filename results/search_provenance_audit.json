@@ -1,0 +1,19 @@
+{
+  "source": "AMLOps_BibTeX_Provenance_Reconciliation_2026-11-21.md",
+  "source_audit_date": "2026-11-21",
+  "status": "HISTORICAL_AUDIT_RECOVERED",
+  "export_files": 18,
+  "raw_entries_including_overlap": 2101,
+  "distinct_nonempty_doi_keys": 1448,
+  "frozen_corpus": 559,
+  "master_with_doi": 515,
+  "master_without_doi": 44,
+  "exact_doi_or_title_matches": 28,
+  "unmatched": 531,
+  "abstract_supplements": 3,
+  "search_query": null,
+  "search_date": null,
+  "database_indexes": null,
+  "original_deduplication_count": null,
+  "limitations": "Recovered report, not fresh inspection of original exports. Unmatched does not imply invalid. No new records or duplicate removals authorized."
+}
