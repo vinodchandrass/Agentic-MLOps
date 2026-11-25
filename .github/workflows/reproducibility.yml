@@ -16,3 +16,6 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Validate Python syntax
         run: python -m compileall -q scripts tests
+
+      - name: Reproduce provisional research audits
+        run: python reproduce_all.py
