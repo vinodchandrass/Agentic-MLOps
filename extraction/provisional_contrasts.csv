@@ -1,0 +1,16 @@
+study,record_id,metric,comparator,baseline,candidate,transformation,baseline_count,candidate_count,denominator,reported_difference,provenance
+S1,1,Completion,Manual,98.00,84.67,pp,147,127,150,-13.33,working_extraction
+S1,1,Completion,No history,79.33,84.67,pp,119,127,150,5.33,working_extraction
+S1,1,Completion,Documentation,68.00,84.67,pp,,,,,16.67,working_extraction
+S1,1,Completion,Semantic only,71.33,84.67,pp,,,,,13.33,working_extraction
+S1,1,Recovery,Retry only,23.30,73.30,pp,,,,50.00,working_extraction
+S1,1,Median time,Manual,3240,143,relative_percent,,,,-95.59,working_extraction
+S2,131,MNIST accuracy,No LLM-HPO,0.9801,0.9940,absolute,,,,0.0139,working_extraction
+S2,131,Credit-g accuracy,No LLM-HPO,0.7640,0.7900,absolute,,,,0.0260,working_extraction
+S2,131,Diabetes RMSE,No LLM-HPO,0.4287,0.3999,absolute,,,,-0.0288,working_extraction
+S3,133,SVM F1,Conventional,0.7047,0.7624,absolute,,,,0.0577,working_extraction
+S3,133,LR F1,Conventional,0.6828,0.7420,absolute,,,,0.0592,working_extraction
+S3,133,RF F1,Conventional,0.7236,0.7860,absolute,,,,0.0624,working_extraction
+S4,397,F1,Static model,0.8929,0.9222,absolute,,,,0.0293,abstract_level
+S4,397,F1,Periodic retraining,0.9074,0.9222,absolute,,,,0.0148,abstract_level
+S4,397,F1,ADWIN,0.8993,0.9222,absolute,,,,0.0229,abstract_level
