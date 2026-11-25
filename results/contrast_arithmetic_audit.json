@@ -1,0 +1,20 @@
+{
+  "source": "MLOPs(6).pdf Table 5",
+  "historical_counts": [
+    5,
+    3,
+    3,
+    3
+  ],
+  "current_counts": [
+    6,
+    3,
+    3,
+    3
+  ],
+  "candidate_studies": 4,
+  "contrasts": 15,
+  "arithmetic_checks_passed": 15,
+  "rounding_tolerance_pp": 0.011,
+  "limitations": "Calculated from displayed rounded values; exact source counts and row-level historical version still require verification. No causal effect, eligibility, or net benefit established. Original outcome values withheld."
+}
