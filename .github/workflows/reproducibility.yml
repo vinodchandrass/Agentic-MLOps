@@ -19,3 +19,9 @@ jobs:
 
       - name: Reproduce provisional research audits
         run: python reproduce_all.py
+
+      - name: Reproduce comparative outcomes and AMEAF logic
+        run: |
+          python scripts/reproduce_contrasts.py
+          python scripts/ameaf.py
+          python scripts/generate_figures.py
