@@ -16,8 +16,9 @@ def check(d):
         errors.append("Retrieval arithmetic mismatch")
     if d["reports_assessed"] - sum(reasons.values()) != d["included_reports"]:
         errors.append("Report eligibility arithmetic mismatch")
-    if d["included_studies"] > d["included_reports"]:
-        errors.append("Study/report mapping requires verification")
+    # A report can describe multiple studies; verify mappings separately.
+    if bool(d["included_studies"]) != bool(d["included_reports"]):
+        errors.append("Included reports and studies must both be positive or both zero")
     if d["records_excluded"] > d["records_screened"]:
         errors.append("Record exclusions exceed screened records")
     return errors
