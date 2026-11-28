@@ -11,6 +11,6 @@ S2,131,Diabetes RMSE,No LLM-HPO,0.4287,0.3999,absolute,,,,-0.0288,working_extrac
 S3,133,SVM F1,Conventional,0.7047,0.7624,absolute,,,,0.0577,working_extraction
 S3,133,LR F1,Conventional,0.6828,0.7420,absolute,,,,0.0592,working_extraction
 S3,133,RF F1,Conventional,0.7236,0.7860,absolute,,,,0.0624,working_extraction
-S4,397,F1,Static model,0.8929,0.9222,absolute,,,,0.0293,abstract_level
-S4,397,F1,Periodic retraining,0.9074,0.9222,absolute,,,,0.0148,abstract_level
-S4,397,F1,ADWIN,0.8993,0.9222,absolute,,,,0.0229,abstract_level
+S4,397,F1,Static model,0.8929,0.9222,absolute,,,,0.0293,full_text_table_I
+S4,397,F1,Periodic retraining,0.9074,0.9222,absolute,,,,0.0148,full_text_table_I
+S4,397,F1,ADWIN,0.8993,0.9222,absolute,,,,0.0229,full_text_table_I
