@@ -1,0 +1,74 @@
+[
+  {
+    "rule": "C",
+    "required": 1,
+    "repair_distance_counts": [
+      1,
+      3
+    ],
+    "compensatory_disagreements": 0,
+    "uncertainty_profiles": 15,
+    "robust": 1,
+    "contingent": 7,
+    "impossible": 7
+  },
+  {
+    "rule": "CE",
+    "required": 2,
+    "repair_distance_counts": [
+      1,
+      6,
+      9
+    ],
+    "compensatory_disagreements": 2,
+    "uncertainty_profiles": 225,
+    "robust": 1,
+    "contingent": 63,
+    "impossible": 161
+  },
+  {
+    "rule": "CEA",
+    "required": 3,
+    "repair_distance_counts": [
+      1,
+      9,
+      27,
+      27
+    ],
+    "compensatory_disagreements": 3,
+    "uncertainty_profiles": 3375,
+    "robust": 1,
+    "contingent": 511,
+    "impossible": 2863
+  },
+  {
+    "rule": "EN",
+    "required": 2,
+    "repair_distance_counts": [
+      1,
+      6,
+      9
+    ],
+    "compensatory_disagreements": 2,
+    "uncertainty_profiles": 225,
+    "robust": 1,
+    "contingent": 63,
+    "impossible": 161
+  },
+  {
+    "rule": "CEAN",
+    "required": 4,
+    "repair_distance_counts": [
+      1,
+      12,
+      54,
+      108,
+      81
+    ],
+    "compensatory_disagreements": 18,
+    "uncertainty_profiles": 50625,
+    "robust": 1,
+    "contingent": 4095,
+    "impossible": 46529
+  }
+]
