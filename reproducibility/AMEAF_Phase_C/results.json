@@ -1,0 +1,41 @@
+{
+  "summary": [
+    {
+      "rule": "C",
+      "admissible": 500,
+      "supported": 125,
+      "invalid": 125
+    },
+    {
+      "rule": "CE",
+      "admissible": 400,
+      "supported": 25,
+      "invalid": 225
+    },
+    {
+      "rule": "CEA",
+      "admissible": 320,
+      "supported": 5,
+      "invalid": 305
+    },
+    {
+      "rule": "EN",
+      "admissible": 400,
+      "supported": 25,
+      "invalid": 225
+    },
+    {
+      "rule": "CEAN",
+      "admissible": 256,
+      "supported": 1,
+      "invalid": 369
+    }
+  ],
+  "checks": {
+    "upgrades": 3063,
+    "irrelevant_changes": 13680,
+    "required_downgrades": 732,
+    "nested_implications": 2064
+  },
+  "scope": "Synthetic profiles; nested implications assume identical evidence profile and evaluation context; not empirical validation."
+}
