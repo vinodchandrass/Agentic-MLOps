@@ -2,4 +2,4 @@ study,claim,C,E,A,N,assessment_status
 S1,agent_net_benefit,U,U,U,U,not_independently_adjudicated
 S2,agent_net_benefit,U,U,U,U,not_independently_adjudicated
 S3,agent_net_benefit,U,U,U,U,not_independently_adjudicated
-S4,agent_net_benefit,U,U,U,U,abstract_level_not_independently_adjudicated
+S4,agent_net_benefit,U,U,U,U,full_text_recovered_not_independently_adjudicated
