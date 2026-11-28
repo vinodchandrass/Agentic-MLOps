@@ -1,0 +1,204 @@
+{
+  "source": "Menezes and Filho (2025), Tables I and II, pp.45–46",
+  "assumptions": "Hypothetical independent symmetric absolute F1 perturbations; fixed assigned costs; not confidence intervals or observed capability retention.",
+  "margins": [
+    {
+      "lambda_": 0,
+      "winner": "RL",
+      "margin": 0.0148,
+      "max_symmetric_F1_error_for_strict_preference": 0.0074
+    },
+    {
+      "lambda_": 0.0001,
+      "winner": "RL",
+      "margin": 0.0083,
+      "max_symmetric_F1_error_for_strict_preference": 0.00415
+    },
+    {
+      "lambda_": 0.0002,
+      "winner": "RL",
+      "margin": 0.0018,
+      "max_symmetric_F1_error_for_strict_preference": 0.0009
+    },
+    {
+      "lambda_": 0.0003,
+      "winner": "Periodic",
+      "margin": 0.0027,
+      "max_symmetric_F1_error_for_strict_preference": 0.00135
+    },
+    {
+      "lambda_": 0.0004,
+      "winner": "Periodic",
+      "margin": 0.0009,
+      "max_symmetric_F1_error_for_strict_preference": 0.00045
+    },
+    {
+      "lambda_": 0.0005,
+      "winner": "ADWIN",
+      "margin": 0.0004,
+      "max_symmetric_F1_error_for_strict_preference": 0.0002
+    },
+    {
+      "lambda_": 0.0006,
+      "winner": "Static",
+      "margin": 0.0008,
+      "max_symmetric_F1_error_for_strict_preference": 0.0004
+    },
+    {
+      "lambda_": 0.001,
+      "winner": "Static",
+      "margin": 0.0056,
+      "max_symmetric_F1_error_for_strict_preference": 0.0028
+    }
+  ],
+  "regret": [
+    {
+      "error": 0,
+      "lambda_": 0.0001,
+      "minimax": "RL",
+      "worst_regret": 0
+    },
+    {
+      "error": 0,
+      "lambda_": 0.0003,
+      "minimax": "Periodic",
+      "worst_regret": 0
+    },
+    {
+      "error": 0,
+      "lambda_": 0.0005,
+      "minimax": "ADWIN",
+      "worst_regret": 0
+    },
+    {
+      "error": 0,
+      "lambda_": 0.001,
+      "minimax": "Static",
+      "worst_regret": 0
+    },
+    {
+      "error": 0.001,
+      "lambda_": 0.0001,
+      "minimax": "RL",
+      "worst_regret": 0
+    },
+    {
+      "error": 0.001,
+      "lambda_": 0.0003,
+      "minimax": "Periodic",
+      "worst_regret": 0
+    },
+    {
+      "error": 0.001,
+      "lambda_": 0.0005,
+      "minimax": "ADWIN",
+      "worst_regret": 0.0016
+    },
+    {
+      "error": 0.001,
+      "lambda_": 0.001,
+      "minimax": "Static",
+      "worst_regret": 0
+    },
+    {
+      "error": 0.005,
+      "lambda_": 0.0001,
+      "minimax": "RL",
+      "worst_regret": 0.0017
+    },
+    {
+      "error": 0.005,
+      "lambda_": 0.0003,
+      "minimax": "Periodic",
+      "worst_regret": 0.0073
+    },
+    {
+      "error": 0.005,
+      "lambda_": 0.0005,
+      "minimax": "ADWIN",
+      "worst_regret": 0.0096
+    },
+    {
+      "error": 0.005,
+      "lambda_": 0.001,
+      "minimax": "Static",
+      "worst_regret": 0.0044
+    },
+    {
+      "error": 0.01,
+      "lambda_": 0.0001,
+      "minimax": "RL",
+      "worst_regret": 0.0117
+    },
+    {
+      "error": 0.01,
+      "lambda_": 0.0003,
+      "minimax": "Periodic",
+      "worst_regret": 0.0173
+    },
+    {
+      "error": 0.01,
+      "lambda_": 0.0005,
+      "minimax": "ADWIN",
+      "worst_regret": 0.0196
+    },
+    {
+      "error": 0.01,
+      "lambda_": 0.001,
+      "minimax": "Static",
+      "worst_regret": 0.0144
+    }
+  ],
+  "floors": [
+    {
+      "floor": 0.89,
+      "error": 0,
+      "cheapest": "Static"
+    },
+    {
+      "floor": 0.89,
+      "error": 0.005,
+      "cheapest": "ADWIN"
+    },
+    {
+      "floor": 0.9,
+      "error": 0,
+      "cheapest": "Periodic"
+    },
+    {
+      "floor": 0.9,
+      "error": 0.005,
+      "cheapest": "Periodic"
+    },
+    {
+      "floor": 0.91,
+      "error": 0,
+      "cheapest": "RL"
+    },
+    {
+      "floor": 0.91,
+      "error": 0.005,
+      "cheapest": "RL"
+    },
+    {
+      "floor": 0.92,
+      "error": 0,
+      "cheapest": "RL"
+    },
+    {
+      "floor": 0.92,
+      "error": 0.005,
+      "cheapest": null
+    },
+    {
+      "floor": 0.93,
+      "error": 0,
+      "cheapest": null
+    },
+    {
+      "floor": 0.93,
+      "error": 0.005,
+      "cheapest": null
+    }
+  ]
+}
